@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recurso>
+    <titulo>Ondas Trigonométricas</titulo>
+    <descricao>Neste software, estudamos fenômenos periódicos e aprendemos a modelar tais fenômenos variando os parâmetros de um função seno do tipo f(x)=a*sen(b*x+c)+d. Os alunos verão que essa função pode ser aplicada para modelar as mais diversas situações, como, por exemplo, a rotação de uma roda gigante, as oscilações da maré ou o brilho de uma estrela.</descricao>
+    <estado>finalizado</estado>
+    <imagem>ondas.jpg</imagem>
+    <tipo>software educacional</tipo>
+    <objetivos>Mostrar alguns fenômenos descritos por funções trigonométricas; Usar dados experimentais ou observacionais e fazer ajustes aproximados a funções elementares.</objetivos>
+    <observacoes>É necessário plugin Flash 9.0 ou mais recente e máquina Java 1.6 ou mais recente.</observacoes>
+    <nivel>Ensio Médio</nivel>
+    <componente>Matemática</componente>
+    <temas>Números e Funções</temas>
+    <autores>Leonardo Barichello, Samuel Rocha de Oliveira</autores>
+    <palavras_chaves>Unicamp, Projeto M³, software educacional, matemática, seno, cosseno, funções trigonométricas, modelagem, fenômenos naturais</palavras_chaves>
+    <assunto>Trigonometria, Função Seno, Função Cosseno, Funções periódicas</assunto>
+</recurso>
+
+
