@@ -1,11 +1,11 @@
 	var codigo_do_software = "ondas";
 	var nome_do_software = "Ondas trigonométricas";
-	var tipo = "software";
+	var tipo = "software v2.0";
 
 
 	var Impressao = $H({
 		software: {
-			titulo: 'O software v2.0',
+			titulo: 'O software',
 			id: 'software',
 			arquivo: 'index.html',
 			conteudo: 'Essa é o material para ser utilizado diretamente pelos alunos.'
@@ -70,4 +70,4 @@
 	var link_mct     = 'http://www.mct.gov.br/';
 	var link_mec     = 'http://www.mec.gov.br/';
 	var link_governo = 'http://www.brasil.gov.br/';
-	var site_projeto = 'http://m3.ime.unicamp.br/portal/';	
+	var site_projeto = 'http://m3.ime.unicamp.br/portal/';

@@ -3,7 +3,6 @@
 <html xmlns = "http://www.w3.org/1999/xhtml"  xml:lang = "pt-br"  lang = "pt-br">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
 		<link rel="stylesheet" type="text/css" href="css/abertura.css" media="screen, projection" title="normal"/>
 		<link rel="alternate stylesheet" type="text/css" href="css/abertura2.css" media="screen, projection" title="grande"/>
 
@@ -22,7 +21,7 @@
 
 		</script>
 
-		<title>Ondas Trigonométricas</title>
+		<title>Embaralhando imagens</title>
 	</head>
 	<body>
 
@@ -60,13 +59,13 @@
 								O software funciona corretamente nos seguintes navegadores de internet:
 							</p>
 							<p>
-								1. Chrome 75+ (mais recomendado)<br />
-								2. Firefox 66.0+;<br />
+								1. Chrome 75+ (mais recomendado) <br />
+								2. Firefox 66.0+; <br />
 							</p>
 							<p> Sua versão: </p>
 							<p><span id="browserOsInst"></span></p>
 							<p id="instnav"></p>
-							<p id="firefox"></p>
+							<p id="Chrome"></p>
 						</div>
 
 						<!--
@@ -79,6 +78,7 @@
 							<p id="instjava"></p>
 							<p id="java"></p>
 						</div>
+
 						<div class="coluna">
 							<h2>Adobre Flash Player</h2>
 							<p>A seguinte versão é necessária:</p>
@@ -89,6 +89,7 @@
 							<p id="flash"></p>
 						</div>
 						-->
+
 						<br class="limpador">
 
 						<div id="erro"style="font-weight:bold; font-style:italic; padding-top:10px; margin-top:20px; border-top:1px solid #CCCCCC; width: 700px;">
@@ -113,7 +114,7 @@
 			</div>
 			<br class="limpador" />
 			<div id="rodape">
-				<a href="http://m3.ime.unicamp.br">Sobre o Matemática Multimídia</a>
+				<a href="http://m3.ime.unicamp.br" target="_blank">Sobre o Matemática Multimídia</a>
 			</div>
 		</div>
 
@@ -123,8 +124,9 @@
 			var jah_abriu = false;
 			var browser=navigator.appName;
 			var b_version=navigator.appVersion;
-			/*
-			var flashRequiredMajorVersion = 9.0;
+
+			//Não precisa mais de flash nem java
+			/*var flashRequiredMajorVersion = 9.0;
 			var flashRequiredMinorVersion = 0;
 			var flashRequiredRevision = 0;
 
@@ -137,6 +139,7 @@
 			$('verJavaInst').innerHTML=deployJava.getJREs();
 			$('verJavaReq').innerHTML=javaRequiredVersion;
 			*/
+
 			$('browserOsInst').innerHTML = BrowserDetect.browser + ' ' + BrowserDetect.version + ' em ' + BrowserDetect.OS ;
 
 
@@ -173,8 +176,13 @@
 				$('Chrome').update('<a href="https://www.google.com/chrome/">Google Chrome</a>');
 			}
 
-			/*
-			var flash = 0;
+			if (BrowserDetect.OS == "Android")
+			{
+				$('instnav').update('Acesse o site pelo computador ou notebook');
+			}
+
+			//Não precisa de Java nem de Flash
+			/*var flash = 0;
 			if (hasReqestedVersion) {
 				flash = 1;
 			}
@@ -191,6 +199,7 @@
 				java = 1;
 			}
 
+
 			if (safari || opera)
 				java = 1;
 
@@ -199,11 +208,6 @@
 				$('instjava').update('Instale a JVM:');
 				$('java').update('<a href="http://www.java.com">Java Virtual Machine<a/>');
 			}*/
-
-			if (BrowserDetect.OS == "Android")
-			{
-				$('instnav').update('Acesse o site pelo computador ou notebook');
-			}
 
 			if (browser == 1 && BrowserDetect.OS != "Android")
 			{
