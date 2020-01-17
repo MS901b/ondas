@@ -104,7 +104,7 @@ function analisaAmbiente()
 		var tmp = new PopupDesesperados(conteudo, 20);
 		return;
 	}
-	/*
+	/* Não utiliza mais Java e nem flash
 	if (!hasReqestedVersion)
 	{
 		var conteudo = '<p><strong>Erro de compatibilidade – Adobe Flash Player</strong></p><p>A versão mínima necessária do plugin para usar este software é <strong><em>Adobe Flash Player '+flashRequiredMajorVersion+'</em></strong>.</p>';
