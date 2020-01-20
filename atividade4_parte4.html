@@ -47,13 +47,8 @@
 		
 
 		<script type="text/javascript">
-			
-			Event.observe(document, 'flash:SalvaLocal', function(ev)
-			{
-				var nomeSoft = 'ondas';
-				if($('SalvaLocal').Pega(nomeSoft, 'atividade_4') != 3)
-					$('SalvaLocal').Salva(nomeSoft, 'atividade_4', '2');
-			})
+			if($('SalvaLocal').Pega(nomeSoft, 'atividade_4') != 3)
+				$('SalvaLocal').Salva(nomeSoft, 'atividade_4', '2');
 			var PosicaoAtual = {Atividade: 4, Parte: 3};
 			var ProximaParte = 'mapa.html';
 			var Popups = $H({
@@ -92,15 +87,7 @@
 			</ul>
 						
 			<div id="software">
-				<div id="conteudo">
-   					<!-- SalvaLocal -->
-					<div class="salva_local">
-						<object id="SalvaLocal" name="SalvaLocal" type="application/x-shockwave-flash" data="applets/SalvaLocal.swf" width="1" 
-						height="1">
-								<param name="menu" value="false" />
-								<param name="movie" value="applets/SalvaLocal.swf" />
-						</object>
-					</div>						
+				<div id="conteudo">			
 						<div class="texto_solto">
 							<p>As funções que você obteve foram:</p>
 							<p>h<sub>1</sub>(t) = <span id="funcao_h1"></span></p>

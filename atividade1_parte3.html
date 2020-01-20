@@ -47,13 +47,9 @@
 		<script type="text/javascript" src="scripts/inputs.js"></script>
 
 		<script type="text/javascript">
+			if($('SalvaLocal').Pega(nomeSoft, 'atividade_1') != 3)
+				$('SalvaLocal').Salva(nomeSoft, 'atividade_1', '2');
 			
-			Event.observe(document, 'flash:SalvaLocal', function(ev)
-			{
-				var nomeSoft = 'ondas';
-				if($('SalvaLocal').Pega(nomeSoft, 'atividade_1') != 3)
-					$('SalvaLocal').Salva(nomeSoft, 'atividade_1', '2');
-			})
 			var PosicaoAtual = {Atividade: 1, Parte: 2};
 			var ProximaParte = 'atividade1_parte4.html';
 			var Popups = $H({
@@ -99,15 +95,7 @@
 			</ul>
 						
 			<div id="software">
-				<div id="conteudo">
-   					<!-- SalvaLocal -->
-					<div class="salva_local">
-						<object id="SalvaLocal" name="SalvaLocal" type="application/x-shockwave-flash" data="applets/SalvaLocal.swf" width="1" 
-						height="1">
-								<param name="menu" value="false" />
-								<param name="movie" value="applets/SalvaLocal.swf" />
-						</object>
-					</div>						
+				<div id="conteudo">				
 						<div class="texto_solto">
 							<h2>A Função Seno</h2>
 							<p> Nesta parte, vamos analisar o efeito do parâmetro <em>b</em> na função <em>g(x)=sen(b*x)</em>.</p>

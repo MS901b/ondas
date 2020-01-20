@@ -47,13 +47,8 @@
 		<script type="text/javascript" src="scripts/inputs.js"></script>
 		
 		<script type="text/javascript">
-			
-			Event.observe(document, 'flash:SalvaLocal', function(ev)
-			{
-				var nomeSoft = 'ondas';
-				if($('SalvaLocal').Pega(nomeSoft, 'atividade_2') != 3)
-					$('SalvaLocal').Salva(nomeSoft, 'atividade_2', '2');
-			})
+			if($('SalvaLocal').Pega(nomeSoft, 'atividade_2') != 3)
+				$('SalvaLocal').Salva(nomeSoft, 'atividade_2', '2');
 			var PosicaoAtual = {Atividade: 2, Parte: 0};
 			var ProximaParte = 'atividade2_parte2.html';
 			var Popups = $H({
@@ -92,15 +87,7 @@
 			</ul>
 						
 			<div id="software">
-				<div id="conteudo">
-   					<!-- SalvaLocal -->
-					<div class="salva_local">
-						<object id="SalvaLocal" name="SalvaLocal" type="application/x-shockwave-flash" data="applets/SalvaLocal.swf" width="1" 
-						height="1">
-								<param name="menu" value="false" />
-								<param name="movie" value="applets/SalvaLocal.swf" />
-						</object>
-					</div>						
+				<div id="conteudo">					
 						<div class="texto_solto">
 							<p> Agora será utilizada uma função seno para modelar um fenômeno oscilatório: o brilho de uma 
 							estrela variável.</p>

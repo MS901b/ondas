@@ -44,13 +44,8 @@
 		
 		
 		<script type="text/javascript">
-			
-			Event.observe(document, 'flash:SalvaLocal', function(ev)
-			{
-				var nomeSoft = 'ondas';
-				if($('SalvaLocal').Pega(nomeSoft, 'atividade_3') != 3)
-					$('SalvaLocal').Salva(nomeSoft, 'atividade_3', '2');
-			})
+			if($('SalvaLocal').Pega(nomeSoft, 'atividade_3') != 3)
+				$('SalvaLocal').Salva(nomeSoft, 'atividade_3', '2');
 			var PosicaoAtual = {Atividade: 3, Parte: 1};
 			var ProximaParte = 'mapa.html';			
 			var Popups = $H({
@@ -87,14 +82,6 @@
 			
 			<div id="software">
 				<div id="conteudo">
-					
-					<div class="salva_local">
-						<object id="SalvaLocal" name="SalvaLocal" type="application/x-shockwave-flash" data="applets/SalvaLocal.swf" width="1" 
-						height="1">
-								<param name="menu" value="false" />
-								<param name="movie" value="applets/SalvaLocal.swf" />
-						</object>
-					</div>
 					
 					<div class="texto_solto">
 						<h2>Conclusão</h2>

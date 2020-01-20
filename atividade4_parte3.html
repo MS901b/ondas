@@ -45,13 +45,8 @@
 		<script type="text/javascript" src="scripts/inputs.js"></script>
 	
 		<script type="text/javascript">
-			
-			Event.observe(document, 'flash:SalvaLocal', function(ev)
-			{
-				var nomeSoft = 'ondas';
-				if($('SalvaLocal').Pega(nomeSoft, 'atividade_4') != 3)
-					$('SalvaLocal').Salva(nomeSoft, 'atividade_4', '2');
-			})
+			if($('SalvaLocal').Pega(nomeSoft, 'atividade_4') != 3)
+				$('SalvaLocal').Salva(nomeSoft, 'atividade_4', '2');
 			var PosicaoAtual = {Atividade: 4, Parte: 2};
 			var ProximaParte = 'atividade4_parte4.html';
 			var Popups = $H({
@@ -90,15 +85,7 @@
 			</ul>
 						
 			<div id="software">
-				<div id="conteudo">
-   					<!-- SalvaLocal -->
-					<div class="salva_local">
-						<object id="SalvaLocal" name="SalvaLocal" type="application/x-shockwave-flash" data="applets/SalvaLocal.swf" width="1" 
-						height="1">
-								<param name="menu" value="false" />
-								<param name="movie" value="applets/SalvaLocal.swf" />
-						</object>
-					</div>						
+				<div id="conteudo">					
 						<div class="texto_solto">
 							<p>Agora, será analisado outro componente: h2. </p>
 							<p>Esse componente representa a altura da cadeira em relação ao eixo da roda secundária, 
