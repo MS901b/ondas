@@ -10,7 +10,7 @@
 	}*/
 	
 });
-var salvaLocalOK=false, documentoOK=false;
+var salvaLocalOK=true, documentoOK=false;
 
 
 Event.observe(document, 'flash:SalvaLocal', function(ev)

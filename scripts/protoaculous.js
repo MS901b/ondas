@@ -7334,3 +7334,6 @@ function flashOnInit(applet)
 {
 	document.fire('flash:'+applet);
 }
+
+
+

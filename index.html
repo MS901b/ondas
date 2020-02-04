@@ -1,182 +1,184 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns = "http://www.w3.org/1999/xhtml"  xml:lang = "pt-br"  lang = "pt-br">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
-		<link rel="stylesheet" type="text/css" href="css/abertura.css" media="screen, projection" />
-		<link rel="stylesheet" type="text/css" href="css/popup.css" media="screen, projection" />
-		
-		<!--[if IE 7]>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+	<link rel="stylesheet" type="text/css" href="css/abertura.css" media="screen, projection" />
+	<link rel="stylesheet" type="text/css" href="css/popup.css" media="screen, projection" />
+	<link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet'>
+
+	<!--[if IE 7]>
 			<link rel="stylesheet" type="text/css" href="css/estilo_ie7.css" media="screen, projection" />
 		<![endif]-->
-		<!--[if lte IE 6]>	
+	<!--[if lte IE 6]>
 			<link rel="stylesheet" type="text/css" href="css/estilo_ie6.css" media="screen, projection" />
 		<![endif]-->
-		
-		<script type="text/javascript" src="scripts/protoaculous.js"></script>
-		<script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
-		<script type="text/javascript" src="scripts/popup.js"></script>
-		<script type="text/javascript" src="scripts/abertura.js"></script>
-		<script type="text/javascript" src="scripts/deployJava.js"></script>
-		<script type="text/javascript" src="scripts/AC_OETags.js"></script>
-		<script type="text/javascript" src="scripts/browser.js"></script>
-		<script type="text/javascript" src="scripts/curiosidades.js"></script>
-		<script type="text/javascript" src="scripts/m3_geral.js"></script>
-		
-				<script type="text/javascript">
-			var FichaUnidade = new Array(
-				{
-					titulo: 'Autor',
-					texto: 'Leonardo Barichello, Samuel Rocha de Oliveira'
-				},
-				{
-					titulo: 'Redação',
-					texto: 'Leonardo Barichello'
-				},
-				{
-					titulo: 'Implementação',
-					texto: 'Sheila Morais de Almeida'
-				},
-				{
-					titulo: 'Revisão de Língua',
-					texto: 'Denis Barbosa Cacique'
-				},
-				{
-					titulo: 'Ilustração',
-					texto: 'Lucas Ogasawara'
-				},
-			    {
-			        titulo: 'Animação',
-			        texto: 'Daniel Sarmento Abrahão'
-				}
-			);
 
-			var FichaProjeto = new Array(
-				{
-					titulo: '- Unicamp -',
-					texto: ''
-				},
-				{
-					titulo: 'Reitor',
-					texto: 'Fernando Ferreira Costa'
-				},
-				{
-					titulo: 'Vice-Reitor',
-					texto: 'Edgar Salvadori de Decca'
-				},
-				{
-					titulo: 'Pró-Reitor de Pós-Graduação',
-					texto: 'Euclides de Mesquita Neto'
-				},
-				{
-					titulo: '- IMECC -',
-					texto: ''
-				},
-				{
-					titulo: 'Diretor',
-					texto: 'Jayme Vaz Jr.'
-				},
-				{
-					titulo: 'Vice-Diretor',
-					texto: 'Edmundo Capelas de Oliveira'
-				},
-				{
-					titulo: '- Matemática Multimídia -',
-					texto: ''
-				},
-				{
-					titulo: 'Coordenação Geral',
-					texto: 'Samuel Rocha de Oliveira'
-				},
-				{
-					titulo: 'Coordenação de Software',
-					texto: 'Leonardo Barichello'
-				},
-				{
-					titulo: 'Coordenação de Implementação',
-					texto: 'Matias Costa'
-				}
-			);
-			
-			
-			
-			var Links = $H({
-				
-			});
-			
-			var Perguntas = $H({
-				licenca: {
-					conteudo: '<p>É cedido ao Ministério da Educação o direito de utilizar esta obra sob as modalidades de distribuição, tradução e edição, excetuando-se o uso comercial.</p><p style="margin-top:10px;">Para informações mais detalhadas sobre as licenças dos recursos utilizados neste software, veja "license.txt".</p>',
-					layout: ['seta_baixo','direita'],
-					largura: 25,
-					callback: function(){/*função vazia pra que não faça nada*/},
-					respostas: [{ok: 'Ok'}]
-				}
-			}); 
-		</script>
-		
-		<title>Ondas Trigonométricas</title>
-	</head>
-	<body>	
-		<div id="container" class="margem_topo">
-			<div id="abertura">
-				<div id="conteudo">
-					
-					<h1>Ondas Trigonométricas</h1> 
-					<div id="apresentacao">
-					
-						<div id="imagem_apresentacao">
-							<img src="imgs/introducao.jpg"/>
-							<div id="texto_apresentacao">
-								<p>	Neste software, você aprenderá como modelar fenômenos periódicos, como o brilho de uma estrela ou 
+	<script type="text/javascript" src="scripts/protoaculous.js"></script>
+	<script type="text/javascript" src="scripts/salvaLocal.js"></script>
+	<script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
+	<script type="text/javascript" src="scripts/popup.js"></script>
+	<script type="text/javascript" src="scripts/abertura.js"></script>
+	<script type="text/javascript" src="scripts/deployJava.js"></script>
+	<script type="text/javascript" src="scripts/AC_OETags.js"></script>
+	<script type="text/javascript" src="scripts/browser.js"></script>
+	<script type="text/javascript" src="scripts/curiosidades.js"></script>
+	<script type="text/javascript" src="scripts/m3_geral.js"></script>
+
+	<script type="text/javascript">
+		var FichaUnidade = new Array(
+			{
+				titulo: 'Autor',
+				texto: 'Leonardo Barichello, Samuel Rocha de Oliveira'
+			},
+			{
+				titulo: 'Redação',
+				texto: 'Leonardo Barichello'
+			},
+			{
+				titulo: 'Implementação',
+				texto: 'Sheila Morais de Almeida'
+			},
+			{
+				titulo: 'Revisão de Língua',
+				texto: 'Denis Barbosa Cacique'
+			},
+			{
+				titulo: 'Ilustração',
+				texto: 'Lucas Ogasawara'
+			},
+			{
+				titulo: 'Animação',
+				texto: 'Daniel Sarmento Abrahão'
+			}
+		);
+
+		var FichaProjeto = new Array(
+			{
+				titulo: '- Unicamp -',
+				texto: ''
+			},
+			{
+				titulo: 'Reitor',
+				texto: 'Fernando Ferreira Costa'
+			},
+			{
+				titulo: 'Vice-Reitor',
+				texto: 'Edgar Salvadori de Decca'
+			},
+			{
+				titulo: 'Pró-Reitor de Pós-Graduação',
+				texto: 'Euclides de Mesquita Neto'
+			},
+			{
+				titulo: '- IMECC -',
+				texto: ''
+			},
+			{
+				titulo: 'Diretor',
+				texto: 'Jayme Vaz Jr.'
+			},
+			{
+				titulo: 'Vice-Diretor',
+				texto: 'Edmundo Capelas de Oliveira'
+			},
+			{
+				titulo: '- Matemática Multimídia -',
+				texto: ''
+			},
+			{
+				titulo: 'Coordenação Geral',
+				texto: 'Samuel Rocha de Oliveira'
+			},
+			{
+				titulo: 'Coordenação de Software',
+				texto: 'Leonardo Barichello'
+			},
+			{
+				titulo: 'Coordenação de Implementação',
+				texto: 'Matias Costa'
+			}
+		);
+
+
+
+		var Links = $H({
+
+		});
+
+		var Perguntas = $H({
+			licenca: {
+				conteudo: '<p>É cedido ao Ministério da Educação o direito de utilizar esta obra sob as modalidades de distribuição, tradução e edição, excetuando-se o uso comercial.</p><p style="margin-top:10px;">Para informações mais detalhadas sobre as licenças dos recursos utilizados neste software, veja "license.txt".</p>',
+				layout: ['seta_baixo', 'direita'],
+				largura: 25,
+				callback: function () {/*função vazia pra que não faça nada*/ },
+				respostas: [{ ok: 'Ok' }]
+			}
+		});
+	</script>
+
+	<title>Ondas Trigonométricas</title>
+</head>
+
+<body>
+	<div id="container" class="margem_topo">
+		<div id="abertura">
+			<div id="conteudo">
+
+				<h1>Ondas Trigonométricas<i>v2.0</i></h1>
+				<div id="apresentacao">
+
+					<div id="imagem_apresentacao">
+						<img src="imgs/introducao.jpg" />
+						<div id="texto_apresentacao">
+							<p> Neste software, você aprenderá como modelar fenômenos periódicos, como o brilho de uma
+								estrela ou
 								o movimento das marés, usando a função seno.
-								</p>
-							</div>
-						</div>
-						
-						<div class="a_direita">
-							<div class="a_esquerda apontador">
-								<a href="introducao.html">Iniciar software</a>
-							</div>
-							<div class="a_esquerda seta_apontador"></div>
+							</p>
 						</div>
 					</div>
-					<br class="limpador" />
-					<div id="patrocinio">				
-						<div class="a_esquerda">
-							<img id="patrocinio_logo" class="a_esquerda" src="img_layout/logo_abertura.jpg" />
-							<img id="patrocinio_unicamp" class="a_esquerda" src="img_layout/unicamp.jpg" />
+
+					<div class="a_direita">
+						<div class="a_esquerda apontador">
+							<a href="introducao.html">Iniciar software</a>
 						</div>
-						<div class="a_direita">
-							<img class="a_esquerda" src="img_layout/fnde.jpg" />
-							<img class="a_esquerda" src="img_layout/mct.png" />
-							<img class="a_esquerda" src="img_layout/sed.png" />
-							<img class="a_esquerda" src="img_layout/me.png" />
-							<img class="a_esquerda sem_padding" src="img_layout/brasil.jpg"/>
-												</div>
-						<br class="limpador" />
-					</div>
-					<!-- SalvaLocal -->
-					<div class="salva_local">
-						<object id="SalvaLocal" name="SalvaLocal" type="application/x-shockwave-flash" data="applets/SalvaLocal.swf" width="1" height="1">
-						<param name="menu" value="false" />
-						<param name="movie" value="applets/SalvaLocal.swf" />
-						</object>
-					</div>								
-					<br class="limpador" />
-					<div id="fichas">
-						<a href="javascript:;" onclick="return false;" id="ficha_tecnica_unidade">Ficha técnica da unidade</a>
-						<span> / </span>
-						<a href="javascript:;" onclick="return false;" id="ficha_tecnica_projeto">Ficha técnica do projeto</a>
+						<div class="a_esquerda seta_apontador"></div>
 					</div>
 				</div>
-			</div>
-			<br class="limpador" />
-			<div id="rodape">
-				<a id="licenca" href="javascript:;" onclick="return false;">Licença</a>&nbsp;<a href="http://m3.mat.br" target="_blank">Sobre o Matemática Multimídia</a>
+				<br class="limpador" />
+				<div id="patrocinio">
+					<div class="a_esquerda">
+						<img id="patrocinio_logo" class="a_esquerda" src="img_layout/logo_abertura.jpg" />
+						<img id="patrocinio_unicamp" class="a_esquerda" src="img_layout/unicamp.jpg" />
+					</div>
+					<div class="a_direita">
+						<img class="a_esquerda" src="img_layout/fnde.jpg" />
+						<img class="a_esquerda" src="img_layout/mct.png" />
+						<img class="a_esquerda" src="img_layout/sed.png" />
+						<img class="a_esquerda" src="img_layout/me.png" />
+						<img class="a_esquerda sem_padding" src="img_layout/brasil.jpg" />
+					</div>
+					<br class="limpador" />
+				</div>
+				<br class="limpador" />
+				<div id="fichas">
+					<a href="javascript:;" onclick="return false;" id="ficha_tecnica_unidade">Ficha técnica da
+						unidade</a>
+					<span> / </span>
+					<a href="javascript:;" onclick="return false;" id="ficha_tecnica_projeto">Ficha técnica do
+						projeto</a>
+					<a href="detect.html" style="float:right;" id="ficha_tecnica_projeto">Ver relatório de
+						compatibilidade</a>
+				</div>
 			</div>
 		</div>
-	</body>
-</html>
+		<br class="limpador" />
+		<div id="rodape">
+			<a id="licenca" href="javascript:;" onclick="return false;">Licença</a>&nbsp;<a
+				href="http://m3.ime.unicamp.br" target="_blank">Sobre o Matemática Multimídia</a>
+		</div>
+	</div>
+</body>
 
+</html>

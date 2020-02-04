@@ -11,7 +11,7 @@
 	
 });
 
-var salvaLocalOK=false, documentoOK=false;
+var salvaLocalOK=true, documentoOK=false;
 var ggbOK = false;
 
 

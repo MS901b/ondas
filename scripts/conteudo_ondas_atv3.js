@@ -5,7 +5,6 @@ var IdPadrao = [['parte/parte','q/questao','/itemletra','/subitem'],'_'];
 */
 
 var Partes = ['1','2'];
-var nomeSoft = 'ondas';
 
 var Questoes = 
 [
