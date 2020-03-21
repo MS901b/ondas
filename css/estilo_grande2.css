@@ -44,6 +44,8 @@ sub, sup {font-size: 10px;}
 #questoes .questao .input_radio .incorreto .radio { background-color:transparent !important;}
 #questoes .questao .input_radio .correto .radio { background-color:transparent !important;}
 
+
+
 .check {
 	background: transparent url(../img_layout/check.gif) no-repeat scroll -20px 0;
 	cursor:pointer;
@@ -119,6 +121,8 @@ sub, sup {font-size: 10px;}
 .texto_solto { width: 380px; margin: 0 20px;}
 .texto_solto p { margin-bottom: 20px;}
 .texto_solto  h2{ font-size: 13px; margin-bottom: 15px; margin-left: 0px; font-weight: bold;}
+
+
 
 .partes
 {
@@ -535,7 +539,6 @@ sub, sup {font-size: 10px;}
 
 #questoes .questao .colchao{margin: 10px 20px 10px 10px;}
 
-#questoes .questao .questao_item_hack{border: 2px solid white; margin: -2px 0px 0px -2px; width: 380px; float: left; position: relative; cursor: pointer;}
 #questoes .questao .questao_item{border: 2px solid white; margin: -2px 0px 0px -2px; width: 380px; float: left; position: relative; cursor: pointer;}
 #questoes .questao .questao_item:hover{border: 2px dashed black; z-index: 10;}
 #questoes .questao .questao_item.selecionada:hover{border: 2px solid black !important; z-index: 10;}
@@ -629,6 +632,7 @@ p .formula
 #questoes .questao .input_texto .input_pequeno{ width: 49px; border: 1px solid black; padding: 0 2px; margin-left: 0px !important; height: 20px; font-size: 11px;}
 #questoes .questao .input_texto .com_quebra{ float: left; }
 #questoes .questao .input_texto .label_multiplo{ float:left; width: 70px; font-size: 11px; padding-right: 10px; height: 18px;}
+#questoes .questao .input_texto div{  position: relative; }
 #questoes .questao .correto input{background: #beff73 url(../img_layout/certinho.gif) bottom right no-repeat;}
 #questoes .questao .incorreto input {background: #ffb47f url(../img_layout/erradinho.gif) bottom right no-repeat;}
 
@@ -909,9 +913,8 @@ p .formula
 
 /* SLIDER */
 
-.slider{height: 2px !important; width: 348px !important; position: relative !important; margin: 25px 0 10px 27px !important; }
-.questao .slider{margin-left:-10px !important;}
-.slider .face {background-color: black !important; position: absolute !important; top: 0 !important; height: 2px !important; width: 318px !important; margin: 0 15px !important;}
+.slider{height: 2px; width: 348px; position: relative; margin: 25px 0 10px 27px }
+.slider .face {background-color: black; position: absolute; top: 0; height: 2px; width: 318px; margin: 0 15px;}
 .slider .handle{
 	height: 35px !important;
 	width: 30px;
@@ -935,25 +938,29 @@ p .formula
 
 .spinner{border: 1px solid black; height: 20px; float: left;}
 .spinner *{float: left; height: 20px; font-style: italic;}
-.spinner input{padding: 0 2px !important; margin: 0 !important; border: none !important;}
-.spinner .up{background: white url(../img_layout/spin-up.gif) center center no-repeat; width: 20px; cursor: pointer; border-left: 1px solid black;}
-.spinner .down{background: white url(../img_layout/spin-down.gif) center center no-repeat; width: 20px; cursor: pointer; border-left: 1px solid black;}
+.spinner input{padding: 0 2px;}
+.spinner .up{background: url(../img_layout/spin-up.gif) center center no-repeat; width: 20px; cursor: pointer; border-left: 1px solid black;}
+.spinner .down{background: url(../img_layout/spin-down.gif) center center no-repeat; width: 20px; cursor: pointer; border-left: 1px solid black;}
 .spinner.desabilitado .up, .spinner.desabilitado .down, .spinner .press{background-color: #DDD;}
+
+
+
 
 /* SELECT */
 
-.select{border: 1px solid black; height: 20px; float: left}
+.select{border: 1px solid black; height: 20px; float: left;}
 .select span{display: block; height: 20px; padding: 0 2px; line-height: 20px;}
-.select .seta{float:none; margin:0; background: url(../img_layout/spin-down.gif) center center no-repeat; width: 20px; height: 20px; display:block; border-left: 1px solid black; top:-20px; position: relative;}
-.opcoes{position: absolute; border: 1px solid black; background-color: white;}
-.opcoes span{display: block; cursor: pointer;}
-.opcoes span.selecionado{background-color: black; color: white;}
+.select span.selecionado{background-color: black; color: white;}
+.select .value{float: left;}
+.select .seta{background: url(../img_layout/spin-down.gif) center center no-repeat; width: 20px; height: 20px; cursor: pointer; border-left: 1px solid black; float: right;}
+.select .opcoes{position: absolute; border: 1px solid black; background-color: white;}
+.select .opcoes span{display: block; cursor: pointer;}
 .select.desabilitado, .select.desabilitado * {background-color: #DDD;}
 
-#questoes .questao .incorreto .select {background:#FFB47F url(../img_layout/erradinho.gif) no-repeat scroll;}
+#questoes .questao .incorreto .select {
+	background:#FFB47F url(../img_layout/erradinho.gif) no-repeat scroll;
+}
 #questoes .questao .correto .select{background: #beff73 url(../img_layout/certinho.gif) no-repeat;}
-#questoes .questao .incorreto .select.especial {background:none;}
-#questoes .questao .correto .select.especial {background:none;}
 
 
 
