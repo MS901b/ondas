@@ -82,6 +82,7 @@ function corrige_q_1_a(valor) {
             if (Math.abs(parseFloat(y) - parseFloat(py[i])) > 0.5) correto = false;
         }
     } else correto = false;
+
     return [correto, correto && valor[1] < 20, correto, correto];
 }
 
