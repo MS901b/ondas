@@ -28,7 +28,7 @@ Event.observe(window, 'load', function() {
 
 function TentaCarregar() {
     if (salvaLocalOK && documentoOK) {
-        BlocoNotas = new Blocao();
+        BlocoNotas = new Bloco();
         initAtividade('atividade_3', 'parte' + (PosicaoAtual.Parte + 1));
         if (PosicaoAtual.Parte == 0) {
             Event.observe('parte1_q1_a_11', 'change', function() {
