@@ -1845,6 +1845,22 @@ p .formula {
     float: right;
 }
 
+.opcoes {
+    position: absolute;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.opcoes span {
+    display: block;
+    cursor: pointer;
+}
+
+.opcoes span.selecionado {
+    background-color: black;
+    color: white;
+}
+
 .select .opcoes {
     position: absolute;
     border: 1px solid black;
